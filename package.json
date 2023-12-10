@@ -1,0 +1,16 @@
+{
+  "name": "0.typescript_course",
+  "version": "1.0.0",
+  "description": "typescript_\b course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "dmytro_kosenko",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.6.2",
+    "lite-server": "^2.6.1"
+  }
+}
