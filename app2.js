@@ -1,5 +1,6 @@
+"use strict";
 function combine(input1, input2, resultTypes) {
-    var result;
+    let result;
     if ((typeof input1 === "number" && typeof input2 === "number") ||
         resultTypes === "as-number") {
         result = +input1 + +input2;
@@ -14,9 +15,23 @@ function combine(input1, input2, resultTypes) {
         return result.toString();
     }
 }
-var combineedAges = combine(30, 26, "as-number");
+const combineedAges = combine(30, 26, "as-number");
 console.log(combineedAges);
-var combineedStringAges = combine(30, 26, "as-number");
+const combineedStringAges = combine(30, 26, "as-number");
 console.log(combineedStringAges);
-var combeneNames = combine("Max", "Fax", "as-text");
+const combeneNames = combine("Max", "Fax", "as-text");
 console.log(combeneNames);
+const u1 = { name: "Max", age: 30 }; // this works!
+//For example, you can simplify this code:
+function greet1(user) {
+    console.log("Hi, I am " + user.name);
+}
+function isOlder1(user, checkAge) {
+    return checkAge > user.age;
+}
+function greet(user) {
+    console.log("Hi, I am " + user.name);
+}
+function isOlder(user, checkAge) {
+    return checkAge > user.age;
+}
