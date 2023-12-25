@@ -8,15 +8,32 @@ const product = {
   },
 };
 
+// const person = {
+//   name: "Max",
+//   age: 30,
+//   hobbies: ["Sports", "Cooking"],
+//   role: [2, "author"],
+// };
+
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+}
+
 const person = {
   name: "Max",
   age: 30,
   hobbies: ["Sports", "Cooking"],
-  role: [2, "author"],
+  role: Role.ADMIN,
 };
 
-person.role.push("admin");
-person.role[1] = 10;
+if (person.role === Role.ADMIN) {
+  console.log("it is admin");
+}
+
+// person.role.push("admin");
+// person.role[1] = 10;
 
 let favouriteActivities: any[]; //any for all types, or we can make it for specific type, like 'string'
 
